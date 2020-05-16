@@ -4,6 +4,9 @@ from selenium import webdriver
 from time import sleep
 import pytesseract
 import re
+
+pytesseract.pytesseract.tesseract_cmd = r'/usr/local/Cellar/tesseract/4.1.1/bin/tesseract'
+
 #----↓ 開啟高鐵購票網站 ↓----#
 url = 'https://irs.thsrc.com.tw/IMINT/?locale=tw'
 option = webdriver.ChromeOptions()   # ←↓加入選項來指定不要有自動控制的訊息
